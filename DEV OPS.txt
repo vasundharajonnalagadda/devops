@@ -1,0 +1,141 @@
+Vasundara@DESKTOP-TLM6SUS MINGW64 ~
+$ cd d:
+
+Vasundara@DESKTOP-TLM6SUS MINGW64 /d
+$ git init vasu
+Initialized empty Git repository in D:/vasu/.git/
+
+Vasundara@DESKTOP-TLM6SUS MINGW64 /d
+$ cd vasu
+
+Vasundara@DESKTOP-TLM6SUS MINGW64 /d/vasu (master)
+$ git config --global user.name "vasundharajonnalagadda"
+
+Vasundara@DESKTOP-TLM6SUS MINGW64 /d/vasu (master)
+$ git config --global user.email "jonnalagaddav95@gmail.com"
+
+Vasundara@DESKTOP-TLM6SUS MINGW64 /d/vasu (master)
+$ git clone "https://github.com/vasundharajonnalagadda/examplevasu"
+Cloning into 'examplevasu'...
+remote: Enumerating objects: 27, done.
+remote: Counting objects: 100% (27/27), done.
+remote: Compressing objects: 100% (21/21), done.
+remote: Total 27 (delta 6), reused 8 (delta 2), pack-reused 0
+Receiving objects: 100% (27/27), 6.58 KiB | 6.58 MiB/s, done.
+Resolving deltas: 100% (6/6), done.
+
+Vasundara@DESKTOP-TLM6SUS MINGW64 /d/vasu (master)
+$ cd examplevasu
+
+Vasundara@DESKTOP-TLM6SUS MINGW64 /d/vasu/examplevasu (main)
+$ git add text.txt
+
+Vasundara@DESKTOP-TLM6SUS MINGW64 /d/vasu/examplevasu (main)
+$ git push origin
+Everything up-to-date
+
+Vasundara@DESKTOP-TLM6SUS MINGW64 /d/vasu/examplevasu (main)
+$ git commit -m "initial commit"
+[main 64ab1a6] initial commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 text.txt
+
+Vasundara@DESKTOP-TLM6SUS MINGW64 /d/vasu/examplevasu (main)
+$ git branch it443
+
+Vasundara@DESKTOP-TLM6SUS MINGW64 /d/vasu/examplevasu (main)
+$ git checkout it443
+Switched to branch 'it443'
+
+Vasundara@DESKTOP-TLM6SUS MINGW64 /d/vasu/examplevasu (it443)
+$ echo "devops"> file1
+
+Vasundara@DESKTOP-TLM6SUS MINGW64 /d/vasu/examplevasu (it443)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Vasundara@DESKTOP-TLM6SUS MINGW64 /d/vasu/examplevasu (main)
+$ git merge it443
+Already up to date.
+
+Vasundara@DESKTOP-TLM6SUS MINGW64 /d/vasu/examplevasu (main)
+$ git add .
+warning: in the working copy of 'file1', LF will be replaced by CRLF the next time Git touches it
+
+Vasundara@DESKTOP-TLM6SUS MINGW64 /d/vasu/examplevasu (main)
+$ git push origin
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 241 bytes | 241.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/vasundharajonnalagadda/examplevasu
+   3cba955..64ab1a6  main -> main
+
+Vasundara@DESKTOP-TLM6SUS MINGW64 /d/vasu/examplevasu (main)
+$ git log -3
+commit 64ab1a667068fae912a3dbfd0b0abfcdf507b3d4 (HEAD -> main, origin/main, origin/HEAD, it443)
+Author: vasundharajonnalagadda <jonnalagaddav95@gmail.com>
+Date:   Mon Dec 18 20:09:44 2023 +0530
+
+    initial commit
+
+commit 3cba95547b25e16861752f2c2aaa94231286a4a6
+Author: vasundharajonnalagadda <jonnalagaddav95@gmail.com>
+Date:   Mon Dec 18 19:52:47 2023 +0530
+
+    initial commit
+
+commit 37813a6ff0d2393250dfe6dabc46c4c1436b1f61
+Author: vasundharajonnalagadda <jonnalagaddav95@gmail.com>
+Date:   Fri Dec 8 09:44:21 2023 +0530
+
+    initial commit
+
+Vasundara@DESKTOP-TLM6SUS MINGW64 /d/vasu/examplevasu (main)
+$ git pull "https://github.com/vasundharajonnalagadda/examplevasu"
+From https://github.com/vasundharajonnalagadda/examplevasu
+ * branch            HEAD       -> FETCH_HEAD
+Already up to date.
+
+
+jenkins
+
+ec2 instance creation
+security--security grps--inbound rules-- edit--add rule-- 8080,0.00--next--copy ipv4--paste in browser--mobaxterm
+
+session--ssh--ipv4add--ec2-user--adv ssh settings--use pvt key--.pem file--ok
+
+sudo su -
+
+jdk 17 installation
+sudo yum install java-17-amazon-corretto-devel
+3rd copy nd paste mobaxterm
+y
+jenkins installation
+linux--fedora--copy 1st 2--then 3rd
+yum install jenkins
+y
+yum install git
+service jenkins start
+
+open ipv4 in browser
+ cat copy link mobaxterm
+copy password nd paste in browser
+ click wrong
+start 
+admin--config--password--apply--save
+
+ipv4 address upto 8080
+username--admin
+password
+sign in
+manage jenkins--plugins--available--github--install--back--new item--name--ok--description--git--repo url--main--repo browser--githubweb--url--apply--save
+
+in github--new repo--in code copy url--
+
+build
